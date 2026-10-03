@@ -105,6 +105,20 @@ clean_df["Energy_Efficiency_Score"] = clean_df[
 ].fillna(
     clean_df["Energy_Efficiency_Score"].median()
 )
+# Bathrooms
+clean_df["Bathrooms"] = clean_df["Bathrooms"].fillna(
+    clean_df["Bathrooms"].median()
+)
+
+# Overall Quality
+clean_df["Overall_Quality"] = clean_df["Overall_Quality"].fillna(
+    clean_df["Overall_Quality"].median()
+)
+
+# Distance to City
+clean_df["Distance_to_City_km"] = clean_df["Distance_to_City_km"].fillna(
+    clean_df["Distance_to_City_km"].median()
+)
 
 
 # ============================================================
